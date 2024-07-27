@@ -1,0 +1,28 @@
+{
+    "name": "svenk/laravel-base64-images",
+    "autoload": {
+        "psr-4": {
+            "SvenK\\LaravelBase64Images\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SvenK\\LaravelBase64Images\\Base64ImagesServiceProvider"
+            ]
+        },
+        "aliases": {
+            "Base64ImageHelper": "SvenK\\LaravelBase64Images\\Facades\\Base64ImageHelper"
+        }
+    },
+    "description": "Simply store base64 images in laravel",
+    "authors": [
+        {
+            "name": "svenk2002"
+        }
+    ],
+    "require": {
+        "intervention/image-laravel": "^1.3",
+        "laravel/framework": "^10.10"
+    }
+}
